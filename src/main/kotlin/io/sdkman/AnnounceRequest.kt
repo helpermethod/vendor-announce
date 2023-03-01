@@ -1,11 +1,10 @@
-package io.sdkman.routes
+package io.sdkman
 
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class StructuredAnnounce(
+data class AnnounceRequest(
     val candidate: String,
     val version: String,
-    val hashtag: String,
-    val url: String,
+    val url: String?,
 )

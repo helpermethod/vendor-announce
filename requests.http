@@ -1,0 +1,9 @@
+POST http://localhost:8080/announce/struct
+Content-Type: application/json
+Accept: application/json
+
+{
+  "candidate": "quarkus",
+  "version": "2.7.7",
+  "url": "https://github.com/quarkusio/quarkus/releases/tag/2.7.7.Final"
+}
