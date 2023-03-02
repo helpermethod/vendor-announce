@@ -22,7 +22,7 @@ class TwitterClient(
             ),
         )
 
-    suspend fun postTweet(text: String) =
+    suspend fun postTweet(text: String): Unit =
         withContext(Dispatchers.IO) {
             twitterClient.postTweet(text)
         }
