@@ -37,9 +37,9 @@ fun Application.module() {
 private fun createTwitterClient(environment: ApplicationEnvironment) =
     environment.config.run {
         TwitterClient(
-            property("twitter.apiKey").getString(),
-            property("twitter.apiSecretKey").getString(),
-            property("twitter.accessToken").getString(),
-            property("twitter.accessTokenSecret").getString(),
+            apiKey = property("twitter.apiKey").getString(),
+            apiSecretKey = property("twitter.apiSecretKey").getString(),
+            accessToken = property("twitter.accessToken").getString(),
+            accessTokenSecret = property("twitter.accessTokenSecret").getString(),
         )
     }
