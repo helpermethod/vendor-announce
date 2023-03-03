@@ -24,7 +24,6 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests")
     testImplementation("io.kotest:kotest-runner-junit5")
     testImplementation("io.kotest:kotest-assertions-core")
-    testImplementation("io.kotest.extensions:kotest-assertions-ktor:1.0.3")
 }
 
 kotlin {
